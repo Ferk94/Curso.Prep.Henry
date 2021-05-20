@@ -36,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var suma = x + y;
+  var suma = x + y; 
   return suma;
 
 }
@@ -70,7 +70,7 @@ function sonIguales(x, y) {
  if(x === y){
    return true;
  }
- return false;
+ return false; 
 }
 
 function tienenMismaLongitud(str1, str2) {
