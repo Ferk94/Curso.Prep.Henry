@@ -39,7 +39,7 @@ function agregarStringInvertida() {
   String.prototype.reverse = function () {
     var stringInvertida = "";
     for(var i = this.length - 1; i >= 0; i--){
-      stringInvertida = stringInvertida + this.charAt(i);
+      stringInvertida += this[i];
     }
     return stringInvertida;
   };
@@ -62,16 +62,19 @@ function agregarStringInvertida() {
       this.apellido = apellido;
       this.edad = edad;
       this.domicilio = domicilio;
-      this.detalle = function () {
-        return{
-          nombre: this.nombre,
-          apellido: this.apellido,
-          edad: this.edad,
-          domicilio: this.domicilio
+      
+        }
+        detalle(){
+          return {
+            nombre:this.nombre,
+            apellid:this.apellido,
+            edad:this.edad,
+            domicilio:this.domicilio
+          }
         }
       }
-    }
-}
+    
+
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
